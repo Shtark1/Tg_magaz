@@ -9,6 +9,7 @@ btn_help = KeyboardButton("❔ Помощь ❔")
 btn_admin = KeyboardButton("🤖 Администратор 🤖")
 
 btn_sub_channel = InlineKeyboardButton(text="Подписаться", url=URL_CHANNEL)
+btn_sub_channel_2 = InlineKeyboardButton(text="Подписаться", url="https://t.me/WyzaFX")
 btn_check_sub = InlineKeyboardButton(text="Проверить", callback_data="check")
 btn_admin_url = InlineKeyboardButton(text="🤖 Админ 🤖", url="https://t.me/xX_715_Xx")
 
@@ -65,7 +66,7 @@ BUTTON_TYPES = {
     "BTN_HOME_ADMIN": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_ban, btn_on_ban).add(btn_view_all_us, btn_view_all_ref).add(btn_ball).add(btn_add_admin),
 
     "BTN_CANCEL": ReplyKeyboardMarkup(resize_keyboard=True).add(btn_cancel),
-    "BTN_SUB": InlineKeyboardMarkup().add(btn_sub_channel).add(btn_check_sub),
+    "BTN_SUB": InlineKeyboardMarkup().add(btn_sub_channel_2, btn_sub_channel).add(btn_check_sub),
     "ADMIN_URL": InlineKeyboardMarkup().add(btn_admin_url),
 
     "BTN_PRODUCT": InlineKeyboardMarkup().add(btn_product_strat).add(btn_product_obuch).add(btn_product_privat),
